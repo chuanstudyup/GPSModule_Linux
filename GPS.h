@@ -20,8 +20,8 @@ public:
 	~GPS();
 	void init(string serial, int baud);
 	void serialRead();
-	
-	
+
+	bool valid;
 	double lat, lon;
 	float velocity, course, altitude;
 	uint8_t SVs;
